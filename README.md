@@ -10,7 +10,7 @@ It requires a basic express server with data stored in json format (this project
 
 ### Objectives
 
-The objective of this project is to showcase a working end-to-end React application with create, read, update and delete functionality.
+The objective of this project is to showcase a working end-to-end React application with basic create, read, update and delete functionality.
 
 ### How to run (WIP)
 
