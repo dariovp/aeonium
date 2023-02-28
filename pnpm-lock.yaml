@@ -1,0 +1,19 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@types/tap': ^15.0.8
+
+devDependencies:
+  '@types/tap': 15.0.8
+
+packages:
+
+  /@types/node/18.14.2:
+    resolution: {integrity: sha512-1uEQxww3DaghA0RxqHx0O0ppVlo43pJhepY51OxuQIKHpjbnYLA7vcdwioNPzIqmC2u3I/dmylcqjlh0e7AyUA==}
+    dev: true
+
+  /@types/tap/15.0.8:
+    resolution: {integrity: sha512-ZfeoiZlLIaFi4t6wccwbTEicrHREkP0bOq8dZVi/nWvG5F8O7LlS2cSUZBiOW/D4cgWS/p2uhM3lJoyzFAl80w==}
+    dependencies:
+      '@types/node': 18.14.2
+    dev: true

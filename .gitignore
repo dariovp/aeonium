@@ -1,0 +1,5 @@
+.nyc*
+.git
+**/node_modules/*
+dist/
+*.log

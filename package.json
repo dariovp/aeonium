@@ -1,0 +1,9 @@
+{
+	"scripts": {
+		"test:frontend": "pnpm run test --filter @aeonium/aeonium-server",
+		"test": "tap"
+	},
+	"devDependencies": {
+		"@types/tap": "^15.0.8"
+	}
+}
