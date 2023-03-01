@@ -6,7 +6,10 @@
   "scripts": {
     "build": "",
     "dev": "nodemon index.ts",
-    "test": "tap --ts src/**/*.test.ts"
+    "test": "tap --ts --coverage-map=map.js"
+  },
+  "tap": {
+    "coverage-map": "map.js"
   },
   "keywords": [],
   "author": "",
