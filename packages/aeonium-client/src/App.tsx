@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+// import { Button } from './components/Button/Button'
 import './App.css'
+// import './sass/main.scss'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +19,15 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
+
+        {/* <Button
+          label='hey'
+          primary
+          onClick={() => {
+            console.log('hey');
+
+          }}
+        /> */}
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
