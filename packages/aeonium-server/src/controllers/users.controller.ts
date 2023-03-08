@@ -9,9 +9,7 @@ async function get(_req: Request, res: Response) {
 }
 
 async function getById(req: Request, res: Response) {
-
   let { userId } = req.params;
-
   let user = await userService.getById(parseInt(userId));
 
   if (user === null) {
@@ -22,7 +20,6 @@ async function getById(req: Request, res: Response) {
 }
 
 async function deletebyId(req: Request, res: Response) {
-
   let { userId } = req.params;
 
   try {
@@ -33,8 +30,21 @@ async function deletebyId(req: Request, res: Response) {
   }
 }
 
+async function addUser(req: Request<{ user: User }>, res: Response) {
+  let { user }: { user: User } = req.body;
+
+  try {
+    await userService.addUser(user);
+    res.status(200).send();
+  } catch (error) {
+    res.status(400).send();
+    throw error;
+  }
+}
+
 export default {
   get,
   getById,
-  deletebyId
+  deletebyId,
+  addUser
 }

@@ -1,10 +1,1 @@
-[
-  {
-    "id": 1,
-    "pfp": "1",
-    "name": "James",
-    "bio": "",
-    "followers": [],
-    "following": []
-  }
-]
+[{"id":1,"pfp":"1","name":"James","bio":"","followers":[],"following":[]},{"id":2,"pfp":"2","name":"Samuel","bio":"","followers":[],"following":[]}]

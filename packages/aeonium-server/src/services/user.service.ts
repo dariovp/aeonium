@@ -33,8 +33,32 @@ async function deleteUser(id: number) {
   writeData(newDB);
 }
 
+async function addUser(newUser: User) {
+  if (!await exists(newUser.id)) {
+    let newDB: User[] = db;
+    newDB.push(newUser);
+    writeData(newDB)
+  } else {
+    throw new Error("User already exists");
+
+  }
+}
+
+async function exists(id: number) {
+  let userFound: User | undefined = undefined;
+  userFound = db.find((potential: User) => {
+    return (potential.id === id);
+  });
+
+  if (userFound !== undefined) {
+    return true;
+  }
+  return false;
+}
+
 export default {
   getAll,
   getById,
-  deleteUser
+  deleteUser,
+  addUser
 }
